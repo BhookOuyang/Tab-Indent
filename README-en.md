@@ -1,44 +1,45 @@
 # Tab Indent
 
-在 Obsidian 里用 Tab 键给自然段加首行缩进，效果接近 Word 的“首行缩进 2 字符”。
+Press Tab to add a first-line indent to a paragraph in Obsidian — similar to Word's "first line indent" (2 characters).
+[中文说明](README.md)
 
-## 功能
+## Features
 
-- 在段落开头按 Tab，即可给该段加上首行缩进
-- 编辑视图和阅读视图都能看到缩进效果
-- 缩进信息以隐藏字符的形式保存在行首，不会污染 Markdown 语法
+- Press Tab at the beginning of a paragraph to indent that line
+- Indentation is visible in both editing view and reading view
+- The indent is stored as an invisible marker at the start of the line, so it doesn't pollute your Markdown syntax
 
-## 使用方法
+## Usage
 
-1. 新起一行，输入至少一个字符
-2. 在行首按 Tab 键，该行就会获得首行缩进
+1. Start a new line and type at least one character
+2. Press Tab at the beginning of the line — the line gets a first-line indent
 
-**注意**：如果光标所在行是空行，按 Tab 会执行 Obsidian 的默认行为（插入 Tab 或触发补全），不会产生缩进。这是有意为之，避免误触。
+**Note**: If the current line is empty, Tab triggers Obsidian's default behavior (inserting a tab or triggering autocomplete) instead of indenting. This is intentional, to prevent accidental indents.
 
-## 阅读视图的缩进
+## Indentation in Reading View
 
-Markdown 的硬性语法要求：**段落之间必须空一行**，才会被识别为两个独立段落。
+Markdown requires a **blank line between paragraphs** for them to be treated as separate paragraphs.
 
-因此：
+Therefore:
 
-- 想同时看到编辑视图 + 阅读视图的缩进 → 每段之间空一行
-- 只在意编辑视图 → 不空行也可以
+- To see the indent in **both** editing view and reading view → leave a blank line between paragraphs
+- If you only care about editing view → no blank line needed
 
-## 不生效的情况
+## When It Doesn't Work
 
-以下类型的行不会触发缩进，Tab 会走 Obsidian 默认行为：
+Tab will fall back to Obsidian's default behavior on the following line types:
 
-- 标题行
-- 列表、引用行
-- 代码块、数学块
-- 表格行
-- Frontmatter 分隔线（`---`）
-- 空行
+- Headings
+- Lists and blockquotes
+- Code blocks and math blocks
+- Table rows
+- Frontmatter delimiter (`---`)
+- Empty lines
 
-## 兼容性
+## Compatibility
 
-仅支持桌面端（插件依赖物理 Tab 键，移动端软键盘没有 Tab，因此不上架移动端）。
+Desktop only. The plugin relies on a physical Tab key; mobile soft keyboards have no Tab key, so it isn't published for mobile.
 
-## 反馈
+## Feedback
 
-如有问题或建议，请在 GitHub 仓库提交 Issue。
+If you run into any issues or have suggestions, please open an issue on the GitHub repository.
