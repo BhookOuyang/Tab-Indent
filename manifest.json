@@ -1,0 +1,9 @@
+{
+  "id": "tab-indent",
+  "name": "Tab Indent",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.3",
+  "description": "Press Tab to indent a paragraph, visible in both editor and reading view.",
+  "author": "BhookOuyang",
+  "isDesktopOnly": true
+}
